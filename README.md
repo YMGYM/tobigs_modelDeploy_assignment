@@ -7,7 +7,7 @@
 ## 과제
 - (필수과제) 아래 제시된 파일들에 주석을 달아 주세요
   - `backend/server.py`, `backend/model/model.py`
-  - 집중해서 볼 키워드는 `Flask`, `POST`, `router`, `POST`, `JSON`
+  - 집중해서 볼 키워드는 `Flask`, `POST`, `router`, `CORS`, `JSON`
   - 여유가 된다면 `frontend/src/components/Page.js`의 `handleSubmit()` 함수도 같이 봐 보세요.
 - (선택과제) 코드를 수정하여 여러분 만의 모델을 직접 만들어 보세요
   - 로컬 서버에서 서로간에 데이터 전송이 가능하면 오케이입니다.
