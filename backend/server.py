@@ -1,0 +1,42 @@
+from flask import request
+from flask import Flask
+from flask_cors import CORS
+from model import model
+import json
+
+app = Flask(__name__)
+CORS(app)
+
+""" status check """
+@app.route("/")
+def index():
+    result = {
+        'message': 'Status is OK.'
+    }
+    return json.dumps(result)
+
+""" ------------ """
+
+""" model predict """
+@app.route('/predict', methods=['POST'])
+def predict_model():
+
+    print("Predict method Start..")
+    params = request.get_json()
+
+    pred = model.predict(params['height'], params['weight'])
+
+    result = {
+        'message': 'Succefully Predicted',
+        'result': pred
+    }
+
+    print("Predict Finish ..")
+    print(result)
+
+    return json.dumps(result)
+""" ------------- """
+
+
+if __name__ == "__main__":
+    app.run();
