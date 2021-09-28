@@ -1,11 +1,11 @@
 from flask import request
 from flask import Flask
-from flask_cors import CORS
+from flask_cors import CORS # 외부에서 접속해도 에러가 나지 않게 보안 설정 적용
 from model import model
 import json
 
 app = Flask(__name__)
-CORS(app)
+CORS(app) # 외부에서 접속해도 에러가 나지 않게 보안 설정 적용
 
 """ status check """
 @app.route("/")
