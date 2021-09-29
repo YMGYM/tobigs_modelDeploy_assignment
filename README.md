@@ -21,8 +21,19 @@
     ~~~
     git clone https://github.com/YMGYM/tobigs_modelDeploy_assignment.git
     ~~~
+  
+- 프로젝트 폴더로 이동합니다
+    ```
+    cd tobigs_modelDeploy_assignment
+    ```
+  
+- 오류 방지를 위해 현재 프로젝트의 로컬 레포지토리를 제거합니다.
+    ```
+    rm -rf .git
+    ```
 
-2. 백엔드 실행
+
+1. 백엔드 실행
    
 
 - 백엔드 폴더로 이동합니다.
